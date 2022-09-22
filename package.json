@@ -1,0 +1,16 @@
+{
+  "name": "tadas-baltaduonis",
+  "main": "server.js",
+  "description": "Tadas Baltaduonis Introduction",
+  "version": "1.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tadasbal/tadas-baltaduonis"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "author": "Tadas Baltaduonis",
+  "license": "Apache-2.0"
+}

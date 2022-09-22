@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tadas Baltaduonis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />   
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-navigation navigation-big-devices"></div>
+        <div class="navigation-small-devices-collapsed"><button id="navigation-button"></button></div>
+        <div class="swiper-navigation" id="navigation-small-devices"></div>
+
+        <script>
+            document.getElementById('navigation-button').addEventListener('click',function() {
+                var navMenu = document.getElementById('navigation-small-devices');
+                var navMenuDisplay = window.getComputedStyle(navMenu).display;
+                if(navMenuDisplay === 'none'){
+                    navMenu.style.display = 'flex';
+                }
+                else{
+                    navMenu.style.display = 'none';
+                }
+                })
+        </script>
+
+        <div class="swiper-wrapper">
+
+            <!-- About me page -->
+            <div class="swiper-slide about-me">
+                <div class="profile-pic first-element">
+                    <img src="static/Images/DSC03018-removebg-preview.png">
+                </div>
+                <h1>Tadas Baltaduonis</h1>
+                <h2>1998-12-28</h2>
+                <h1>Full-Stack Developer</h1>
+                <h2>+370 656 50610</h2>
+                <h2>tadasbaltaslt@gmail.com</h2>
+                <p>From a businessperson to a developer. I enjoy logical tasks and learning about new innovations, that is how I became a developer. 
+                I am an energetic person, who enjoys working in a fast-paced environment. I prefer finding creative ideas to complete a task rather 
+                than working hard mindlessly.</p>
+            </div>
+
+            <!-- Education page -->
+            <div class="swiper-slide">
+                <h1 class="first-element education-page-h1">Education</h1>
+                <img class="slide-icon" src="static/Icons/icon-park-outline_certificate.png">
+                <h2>IBM Full Stack Software Developer Professional Certificate</h2>
+                <h3>2022-08</h3>
+                <p>10 courses
+                    on various Application Development and Cloud technologies. 
+                    Hands-on working knowledge with HTML, CSS, JavaScript, GitHub,
+                    Node.js, React, Cloud Native practices, DevOps, CI/CD, Containers,
+                     Docker, Kubernetes, OpenShift, Python programming, Databases, SQL,
+                     NoSQL, Django ORM, Bootstrap, Application Security, Microservices, 
+                     Serverless computing, and more.</p>
+                <h2>Python for Everybody</h2>
+                <h3>2022-06</h3>
+                <p>4 courses on fundamental programming concepts through 
+                    using the Python programming language. </p>
+                <h2>Vilnius University Business School</h2>
+                <h3>2021</h3>
+                <p>Bachelor’s degree in International Business.</p>
+            </div>
+
+            <!-- Job Experiences page -->
+            <div class="swiper-slide">
+                <h1 class="first-element">Job Experiences</h1>
+                <img class="slide-icon" src="static/Icons/briefcase.png">
+                <h2>IT Project Manager</h2>
+                <h2>Systems Integration Solutions, UAB</h2>
+                <h3>Nov 2021 - Aug 2022</h3>
+
+                <h2>Associate Product Manager</h2>
+                <h2>Ignitis, UAB</h2>
+                <h3>Nov 2020 - Apr 2021</h3>
+
+                <h2>Intern at B2B Product Management Department</h2>
+                <h2>Ignitis, UAB</h2>
+                <h3>Jul 2020 - Nov 2020</h3>
+
+                <h2>Commerce Assistant</h2>
+                <h2>Kesko Senukai Digital, UAB</h2>
+                <h3>Jul 2019 - Jan 2020</h3>
+
+                <h2>Sales Manager</h2>
+                <h2>TAMO group, UAB</h2>
+                <h3>Oct 2018 - Jul 2019</h3>
+            </div>
+
+            <!-- My Projects page -->
+            <div class="swiper-slide my-projects">
+                <h1 class="first-element">My Projects</h1>
+                <img id="maed-pic" src="static/Images/maed-presentation.png">
+                <h2>MAED</h2>
+                <h3>Django Web App</h3>
+                <p>MAED is for searching and posting activities - restaurants, 
+                    entertainment or events. I created MAED using Python (Django), 
+                    Javascript, HTML, CSS. MAED stores and retrieves data from Cloudant 
+                    (noSQL database) and images are stored in AWS S3 (Object Storage). 
+                    This Web app is deployed on IBM Cloud Foundry.</p>
+                <a href="">
+                    <img src="static/Icons/web.png">
+                    <span>Website link</span>
+                </a>
+                <a href="">
+                    <img src="static/Icons/github.png">
+                    <span>Github link</span>
+                </a>
+            </div>
+
+            <!-- Recommendations page -->
+            <div class="swiper-slide recommendations-page">
+                <h1 class="first-element">Recommendations</h1>
+                <img class="slide-icon" src="static/Icons/recommendation.png">
+                <h2>Chief Customer Officer</h2>
+                <span class="company-employee">TAMO group, UAB</span>
+                <span class="company-employee">Malvina Vilniškienė</span>
+                <span class="phone">+370 620 93441</span>
+                <span class="email">malvina@tamo.lt</span>
+
+                <h2>Head of stock & availability department</h2>
+                <span class="company-employee">Kesko Senukai Digital, UAB</span>
+                <span class="company-employee">Virginija Kudarauskienė</span>
+                <span class="phone">+370 625 62381</span>
+                <span class="email">virginija.kudarauskiene@ksdigital.lt</span>
+
+                <h2>Head of B2B product development department</h2>
+                <span class="company-employee">Ignitis, UAB</span>
+                <span class="company-employee">Martynas Šutkus</span>
+                <span class="phone">+370 686 08792</span>
+                <span class="email">martynas.sutkus@ignitis.lt</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Swiper -->
+<script>
+    var menu = ['About Me', 'Education', 'Job Experiences', 'My Projects', 'Recommendations']
+    var swiper = new Swiper('.mySwiper', {
+        direction: "vertical",
+        slidesPerView: 1,
+        loop:true,
+        mousewheel: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-navigation",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menu[index]) + "</span>";
+          },
+        },
+    });
+</script>
+</body>
+</html>

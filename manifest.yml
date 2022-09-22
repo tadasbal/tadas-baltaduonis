@@ -1,0 +1,7 @@
+---
+applications:
+ - name: tadas-baltaduonis
+   routes:
+      - route: tadas-baltaduonis.eu-de.mybluemix.net
+   memory: 128M
+   buildpack: nodejs_buildpack
