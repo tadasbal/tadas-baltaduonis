@@ -217,8 +217,13 @@ p{
 /* Above is css for about me page */
 /* Below is css for Education page */
 
-.education-page-h1{
+.education-page h1{
     font-size: min(11vw, 32px) !important;
+}
+
+.education-page>p>a{
+    text-decoration: none;
+    color: #02ffff;
 }
 
 /* Above is css for Education page */
@@ -253,7 +258,7 @@ p{
 .my-projects a>span{
     margin-left: 10px;
     line-height: 24px;
-    color: #3700ff;
+    color: #02ffff;
     display: block;
     float: left;
 }
