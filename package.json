@@ -9,7 +9,10 @@
     "url": "https://github.com/tadasbal/tadas-baltaduonis"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemailer": "^6.8.0"
   },
   "author": "Tadas Baltaduonis",
   "license": "Apache-2.0"

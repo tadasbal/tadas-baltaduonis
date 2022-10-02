@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tadas Baltaduonis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, minimum-scale=0.9, maximum-scale=0.9" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />   
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -38,7 +38,7 @@
                 <h2>1998-12-28</h2>
                 <h1>Full-Stack Developer</h1>
                 <h2>+370 656 50610</h2>
-                <h2>tadasbaltaslt@gmail.com</h2>
+                <h2><a href="mailto:tadasbaltaslt@gmail.com">tadasbaltaslt@gmail.com</a></h2>
                 <p>From a businessperson to a developer. I enjoy logical tasks and learning about new innovations, that is how I became a developer. 
                 I am an energetic person, who enjoys working in a fast-paced environment. I prefer finding creative ideas to complete a task rather 
                 than working hard mindlessly.</p>
@@ -134,12 +134,34 @@
                 <span class="phone">+370 686 08792</span>
                 <span class="email">martynas.sutkus@ignitis.lt</span>
             </div>
+
+            <!-- Contact me page -->
+            <div class="swiper-slide contact-me-page">
+                <form class="first-element" action="/" method="POST">
+                    <label for="email">Your email:</label>
+                    <input id="email" name="email" type="email">
+                    <label for="subject">Subject:</label>
+                    <input id="subject" name="subject">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
+                <div class="contacts">
+                    <img src="static/Icons/email.png" alt="email-icon">
+                    <a href="mailto:tadasbaltaslt@gmail.com">tadasbaltaslt@gmail.com</a>
+                </div>
+                <div class="contacts">
+                    <img src="static/Icons/phone.png" alt="phone-icon">
+                    <span>+37065650610</span>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Initialize Swiper -->
 <script>
-    var menu = ['About Me', 'Education', 'Job Experiences', 'My Projects', 'Recommendations']
+    var menu = ['About Me', 'Education', 'Job Experiences', 'My Projects', 'Recommendations', 'Contact me']
     var swiper = new Swiper('.mySwiper', {
         direction: "vertical",
         slidesPerView: 1,

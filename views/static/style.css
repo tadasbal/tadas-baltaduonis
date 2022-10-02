@@ -34,7 +34,7 @@ border-spacing: 0;
     src: url("Font/nasalization-rg.otf");
 }
 
-body{
+body, button{
     font-family: Nasalization;
     color: #FFFFFF;
     overflow: hidden;
@@ -62,11 +62,16 @@ h3{
     font-weight: 400;
 }
 
-p{
+p, button{
     font-size: 16px;
     width: min(95%, 595px);
     text-align: center;
     margin-bottom: 20px;
+}
+
+a{
+    color: #02ffff;
+    text-decoration: none;
 }
 
 .swiper-navigation{
@@ -149,7 +154,7 @@ p{
     opacity: 1 !important;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .navigation-big-devices {
       display: none;
     }
@@ -221,11 +226,6 @@ p{
     font-size: min(11vw, 32px) !important;
 }
 
-.education-page>p>a{
-    text-decoration: none;
-    color: #02ffff;
-}
-
 /* Above is css for Education page */
 /* Below is css for My Projects page */
 
@@ -247,7 +247,6 @@ p{
     display: block;
     width: 145px;
     margin-bottom: 5px;
-    text-decoration: none;
 }
 
 .my-projects a img{
@@ -258,7 +257,6 @@ p{
 .my-projects a>span{
     margin-left: 10px;
     line-height: 24px;
-    color: #02ffff;
     display: block;
     float: left;
 }
@@ -291,4 +289,62 @@ p{
 
 .recommendations-page>.email{
     margin-bottom: 40px;
+}
+
+/* Above is css for Recommendations page */
+/* Below is css for Contact me page */
+
+.contact-me-page form{
+    width: min(94vw, 900px);
+
+}
+
+.contact-me-page form input, .contact-me-page form textarea{
+    width: 94%;
+    padding: 0 3% 0;
+    height: 40px;
+    margin: 5px 0 18px;
+    background: #D9D9D9;
+    border-radius: 25px;
+}
+
+.contact-me-page form textarea{
+    height: 180px;
+    padding: 10px 3% 0;
+}
+
+.contact-me-page form label{
+    margin-left: 25px;
+}
+
+.contact-me-page form button{
+    display: block;
+    width: min(94vw, 300px);
+    height: 40px;
+    background: #0BACDF;
+    border-radius: 25px;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+.contact-me-page form button:hover{
+    background: #0011ff;
+}
+
+.contacts{
+    width: 280px;
+    line-height: 38px;
+}
+
+.contacts:first-of-type{
+    margin-top: 20px;
+}
+
+.contacts img{
+    width: 38px;
+    float: left;
+    margin-right: 15px;
 }
