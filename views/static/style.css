@@ -115,7 +115,7 @@ a{
 }
 
 .navigation-small-devices-collapsed>button{
-    background-image: url("Icons/menu.png");
+    background-image: url("menu.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size:contain;
