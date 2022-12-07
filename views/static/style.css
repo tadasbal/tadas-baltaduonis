@@ -115,7 +115,7 @@ a{
 }
 
 .navigation-small-devices-collapsed>button{
-    background-image: url("menu.png");
+    background-image: url("Icons/menu.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size:contain;
@@ -154,7 +154,7 @@ a{
     opacity: 1 !important;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .navigation-big-devices {
       display: none;
     }
